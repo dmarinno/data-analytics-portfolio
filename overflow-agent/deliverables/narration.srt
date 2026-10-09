@@ -1,0 +1,32 @@
+1
+00:00:00,300 --> 00:00:02,700
+When the sales floor goes quiet, the Overflow Agent picks up.
+
+2
+00:00:03,300 --> 00:00:04,900
+It started in March.
+
+3
+00:00:04,900 --> 00:00:06,800
+By April, one call in 250 became a sale.
+
+4
+00:00:07,200 --> 00:00:09,000
+In July, a team began rescuing the deals it couldn’t finish.
+
+5
+00:00:09,000 --> 00:00:10,800
+The rate more than doubled.
+
+6
+00:00:11,300 --> 00:00:14,700
+September’s update: one sale in every 42 calls.
+
+7
+00:00:15,300 --> 00:00:17,700
+37,444 calls. 397 sales.
+
+8
+00:00:18,200 --> 00:00:19,500
+And counting.
+
