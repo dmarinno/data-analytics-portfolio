@@ -144,9 +144,10 @@ function text(ctx, str, x, y, o = {}) {
   ctx.fillText(str, x, y);
   ctx.restore();
   const left = o.align === 'center' ? x - m.width / 2 : o.align === 'right' ? x - m.width : x;
-  if ((o.alpha == null ? 1 : o.alpha) > 0.05) {
+  const alpha = o.alpha == null ? 1 : o.alpha;
+  if (alpha > 0.05) {
     TEXT_LOG.push({
-      str, px, x0: left, x1: left + m.width,
+      id: o.id || str, str, px, alpha, x0: left, x1: left + m.width,
       y0: y - m.actualBoundingBoxAscent, y1: y + m.actualBoundingBoxDescent,
     });
   }

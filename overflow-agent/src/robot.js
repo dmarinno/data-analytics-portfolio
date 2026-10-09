@@ -181,7 +181,7 @@ function drawHelper(ctx, x, y, s, color, dark, st = {}) {
   longShadow(ctx, body, 0.25, 20, 22, 20);
   twoTone(ctx, body, color, dark, 0.12, 0.08, 110, 0.1);
   const head = () => circle(ctx, 0, -215, 42);
-  twoTone(ctx, head, '#F6D2B8', '#D9A486', 0.12, 0.1, 84, 0.15);
+  twoTone(ctx, head, st.head || '#E9E4FF', st.headDark || '#BDB4F0', 0.12, 0.1, 84, 0.15);
   // arms reaching up when catching
   const reach = st.reach || 0;
   for (const side of [-1, 1]) {
