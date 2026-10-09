@@ -829,7 +829,7 @@ const NARRATION = [
   { a: 9.0, b: 10.8, s: 'The rate more than doubled.' },
   { a: 11.3, b: 14.7, s: 'September’s update: one sale in every 42 calls.' },
   { a: 15.3, b: 17.7, s: '37,444 calls. 397 sales.' },
-  { a: 18.3, b: 19.5, s: 'And counting.' },
+  { a: 18.2, b: 19.5, s: 'And counting.' },
 ];
 
 function drawCaption(ctx, T) {
