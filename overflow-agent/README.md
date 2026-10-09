@@ -12,7 +12,7 @@ from the same timeline as the visuals.
 npm install && bash render_all.sh
 ```
 
-Outputs land in `out/`:
+Outputs land in `out/`. The delivered copies, plus `qc_report.md`, are in `deliverables/`:
 
 | File | What |
 |---|---|
