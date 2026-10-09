@@ -617,7 +617,7 @@ function scene4(ctx, t, T) {
           const e = easeInOut(ck);
           const sepNow = { x: st.x, y: CH.base - (CH.base - st.y) * bars[6].g };
           const x = lerp(AGENT_C.x + 60, sepNow.x, e);
-          const y = lerp(AGENT_C.y - 40, sepNow.y - 30, e) - Math.sin(Math.PI * e) * 220;
+          const y = lerp(AGENT_C.y - 40, sepNow.y - 30, e) - Math.sin(Math.PI * e) * 90;
           drawCoin(ctx, x, y, 24 + 6 * Math.sin(Math.PI * ck), { squish: Math.cos(ck * 9) * 0.35 + 0.65, alpha: chartA * (1 - smooth(prog(ck, 0.85, 1))) });
         }
         drawBurst(ctx, AGENT_C.x + 60, AGENT_C.y - 40, prog(lt, S4_TRAVEL, S4_TRAVEL + 0.35), 60, C.gold, 8, Math.round(b.t0 * 100));
