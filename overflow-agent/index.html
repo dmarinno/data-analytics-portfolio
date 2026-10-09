@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Overflow Agent</title>
+<style>
+  @font-face { font-family: Nunito; font-weight: 700; src: url(fonts/nunito-latin-700-normal.woff2); }
+  @font-face { font-family: Nunito; font-weight: 800; src: url(fonts/nunito-latin-800-normal.woff2); }
+  @font-face { font-family: Nunito; font-weight: 900; src: url(fonts/nunito-latin-900-normal.woff2); }
+  @font-face { font-family: Fredoka; font-weight: 500; src: url(fonts/fredoka-latin-500-normal.woff2); }
+  @font-face { font-family: Fredoka; font-weight: 600; src: url(fonts/fredoka-latin-600-normal.woff2); }
+  html, body { margin: 0; background: #120A26; }
+  canvas { display: block; width: 100vw; height: auto; }
+</style>
+</head>
+<body>
+<canvas id="c" width="1920" height="1080"></canvas>
+<script src="src/lib.js"></script>
+<script src="src/robot.js"></script>
+<script src="src/scenes.js"></script>
+<script>
+  // Fonts must be loaded before any frame is drawn (deterministic text metrics).
+  window.ready = Promise.all([
+    document.fonts.load('700 48px Nunito'), document.fonts.load('800 48px Nunito'),
+    document.fonts.load('900 48px Nunito'), document.fonts.load('600 48px Fredoka'),
+    document.fonts.load('500 48px Fredoka'),
+  ]).then(() => document.fonts.ready);
+  // Open index.html#t=12.5 in a browser to preview a single moment.
+  window.ready.then(() => renderAt(parseFloat((location.hash.match(/t=([\d.]+)/) || [])[1] || 0)));
+</script>
+</body>
+</html>
